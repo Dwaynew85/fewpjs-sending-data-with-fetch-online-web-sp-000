@@ -20,7 +20,10 @@ function submitData(userName, userEmail){
     })
     .then(function(object) {
       return addToDOM(object.id);
-      alert('Done!')
+    })
+    .catch(function(error) {
+    alert("Bad things! Ragnarők!");
+    addToDOM(error.message);
     });
 }
 
