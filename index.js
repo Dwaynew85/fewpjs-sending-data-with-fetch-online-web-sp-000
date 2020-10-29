@@ -1,9 +1,9 @@
 // Add your code here
 // Add your code here
-function submitData(name, email){
+function submitData(userName, userEmail){
     let formData = {
-        userName: name,
-        userEmail: email
+        name: userName,
+        email: userEmail
       };
 
       let configObj = {
