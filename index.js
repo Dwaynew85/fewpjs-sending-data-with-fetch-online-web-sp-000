@@ -1,5 +1,4 @@
 // Add your code here
-// Add your code here
 function submitData(userName, userEmail){
   let formData = {
       name: userName,
@@ -20,7 +19,8 @@ function submitData(userName, userEmail){
     return response.json();
     })
     .then(function(object) {
-      return console.log(object);
+      return addToDOM(object.id);
+      alert('Done!')
     });
 }
 
